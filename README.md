@@ -113,6 +113,8 @@ automl_config = AutoMLConfig(
 
 The experiment ran on a remote compute cluster with the progress tracked real time using the `RunDetails` widget as shown below:
 
+![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/AML%20-%20Best%20Model.png)
+
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
