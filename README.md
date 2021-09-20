@@ -1,8 +1,13 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
-# Your Project Title Here
+# Udacity Azure ML Nanodegree Capstone Project - Predict Customer Churn
 
-*TODO:* Write a short introduction to your project.
+## Overview
+
+This Capstone project is part of the Udacity Azure ML Nanodegree.
+In this project, I used a loan Application Prediction dataset from Kaggle [(Dataset)](https://www.kaggle.com/blastchar/telco-customer-churn) to build a loan application prediction classifier.The goal Predict behavior to retain customers. You can analyze all relevant customer data and develop focused customer retention programs.
+
+
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
