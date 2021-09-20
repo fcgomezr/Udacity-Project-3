@@ -14,12 +14,39 @@ The diagram below provides an overview of the workflow:
 ![workflow](https://www.element61.be/sites/default/files/assets/insights/mlservices/Workflow.jpg)
 
 
+## Project Set Up and Installation
+To set up this project, you will need the following 5 items:
+> * an Azure Machine Learning Workspace with Python SDK installed
+>
+> * the two project notebooks named `automl` and `hyperparameter_tuning`
+>
+> * the python script file named `train.py`
+>
+> * the conda environment yaml file `conda_env.yml` and scoring script `score.py`
+>
+To run the project,
+> * upload all the 5 items to a jupyter notebook compute instance in the AML workspace and place them in the _**same folder**_
+>
+> * open the `automl` notebook and run each code cell _**in turn**_ from Section 1 thru 3, _**stop right before**_ Section 4 `Model Deployment`
+>
+> * open the `hyperparameter_tuning` and run each code cell _**in turn**_ from Section 1 thru 3, _**stop right before**_ Section 4 `Model Deployment`
+>
+> * compare the best model accuracy in `automl` and `hyperparameter_tuning` notebooks, run Section 4 `Model Deployment` from the notebook that has the _**best**_ performing model
+>
 
 
 ## Dataset
 
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+<p> Each row represents a customer, each column contains customer’s attributes described on the column Metadata. The data set includes information about:
+  <ol>
+    <li> Customers who left within the last month – the column is called Churn. </li>
+    <li> Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and                                                            movies. </li>
+    <li> Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges. </li>
+    <li> Demographic info about customers – gender and if they have partners and dependents. </li>
+  </ol>
+</p>
+
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
