@@ -115,6 +115,9 @@ The experiment ran on a remote compute cluster with the progress tracked real ti
 
 ![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/AML%20-%20Best%20Model.png)
 
+The experiment run took slightly over **27 minutes** to finish:
+
+![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/AML%20-%20Time.png)
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
