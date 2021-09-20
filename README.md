@@ -5,12 +5,16 @@
 ## Overview
 
 This Capstone project is part of the Udacity Azure ML Nanodegree.
-In this project, I used a loan Application Prediction dataset from Kaggle [(Dataset)](https://www.kaggle.com/blastchar/telco-customer-churn) to build a loan application prediction classifier.The goal Predict behavior to retain customers. You can analyze all relevant customer data and develop focused customer retention programs.
+In this project, I used a loan Application Prediction dataset from Kaggle [(Dataset)](https://www.kaggle.com/blastchar/telco-customer-churn) to build a loan application prediction classifier.The goal Predict behavior to retain customers. I can analyze all relevant customer data and develop focused customer retention programs.
+
+I built two models, one using AutoML and one, custom model. The AutoML is equipped to train and produce the best model on its own, while the custom model leverages HyperDrive to tune training hyperparameters to deliver the best model. Between the AutoML and Hyperdrive experiment runs, a best performing model was selected for deployment. Scoring requests were then sent to the deployment endpoint to test the deployed model.
+
+
+The diagram below provides an overview of the workflow:
+![workflow](assets/MLworkflow.png)
 
 
 
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset
 
