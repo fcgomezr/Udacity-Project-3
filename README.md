@@ -57,7 +57,7 @@ So, in this task we will be predicting whether a customer will churn or not and 
 
 ### Access
 
-The dataset was downloaded from this [Github Repo] (https://github.com/fcgomezr/Udacity-Project-3/blob/main/data%20sets/WA_Fn-UseC_-Telco-Customer-Churn.csv) where I have staged it for direct download to the AML workspace using SDK.
+The dataset was downloaded from this [Github Repo](https://github.com/fcgomezr/Udacity-Project-3/blob/main/data%20sets/WA_Fn-UseC_-Telco-Customer-Churn.csv) where I have staged it for direct download to the AML workspace using SDK.
 
 Once the dataset was downloaded, SDK was again used to clean and split the data into training and validation datasets, which were then stored as Pandas dataframes in memory to facilitate quick data exploration and query, and registered as AML TabularDatasets in the workspace to enable remote access by the AutoML experiment running on a remote compute cluster.
 
