@@ -88,6 +88,31 @@ The AutoML configurations used for this experiment are:
 
 The AutoML experiment run was executed with this AutoMLConfig settings:
 
+
+
+```python
+# TODO: Put your automl settings here
+automl_settings = {    
+    "experiment_timeout_minutes": 25,
+    "max_concurrent_iterations": 5,
+    "primary_metric" : 'AUC_weighted'}
+
+# TODO: Put your automl config here
+automl_config = AutoMLConfig(
+                             compute_target=comp_trget,
+                             task = "classification",
+                             training_data=temp,
+                             label_column_name="Churn",   
+                             enable_early_stopping= True,
+                             featurization= 'auto',
+                             n_cross_validations=7,
+                             debug_log = "automl_errors.log",
+                             **automl_settings
+)
+```
+
+
+
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
