@@ -49,7 +49,11 @@ To run the project,
 
 
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+The task is to train a loan prediction classifier using the dataset. Customer churn or customer attrition is the phenomenon where customers of a business no longer purchase or interact with the business. 
+
+The ability to be able to predict that a certain customer is at a very high risk of churning, while there is still some time to do something significant about it, itself represents a great additional potential revenue source for any business.
+
+So, in this task we will be predicting whether a customer will churn or not and if yes, then the concerned team can inquire or further analyse on cutomer behavior and purchase details.
 
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
