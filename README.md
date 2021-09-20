@@ -66,7 +66,27 @@ The dataset after downloaded and registered into the workspace looks like this:
 ![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/Datasets.png)
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
+Automated machine learning picks an algorithm and hyperparameters for you and generates a model ready for deployment. There are several options that you can use to configure automated machine learning experiments.
+This is a binary classification problem with label column 'Attrition' having output as 'true' or 'false'. 25 mins is the experiment_timeout_duration, a maximum of 5 concurrent iterations take place together, and the primary metric is AUC_weighted.
+
+The AutoML configurations used for this experiment are:
+
+| Auto ML Configuration | Value | Explanation |
+|    :---:     |     :---:      |     :---:     |
+| experiment_timeout_minutes | 25 | Maximum duration in minutes that all iterations can take before the experiment is terminated |
+| max_concurrent_iterations | 5 | Represents the maximum number of iterations that would be executed in parallel |
+| primary_metric | AUC_weighted | This is the metric that the AutoML runs will optimize for when selecting the best performing model |
+| compute_target | cpu_cluster(created) | The compute target on which we will run the experiment |
+| task | classification | This is the nature of our machine learning task |
+| training_data | dataset(imported) | The training data to be used within the experiment |
+| label_column_name | Attrition | The name of the label column |
+| path | ./capstone-project | This is the path to the project folder |
+| enable_early_stopping | True | Enable early termination if the score is not improving |
+| featurization | auto | Indicates if featurization step should be done automatically or not, or whether customized featurization should be used |
+| debug_log | automl_errors.log | The log file to write debug information to |
+
+The AutoML experiment run was executed with this AutoMLConfig settings:
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
