@@ -111,7 +111,7 @@ automl_config = AutoMLConfig(
 )
 ```
 
-
+The experiment ran on a remote compute cluster with the progress tracked real time using the `RunDetails` widget as shown below:
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
