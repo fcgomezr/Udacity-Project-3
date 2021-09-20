@@ -56,7 +56,14 @@ The ability to be able to predict that a certain customer is at a very high risk
 So, in this task we will be predicting whether a customer will churn or not and if yes, then the concerned team can inquire or further analyse on cutomer behavior and purchase details.
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+
+The dataset was downloaded from this [Github Repo] (https://github.com/fcgomezr/Udacity-Project-3/blob/main/data%20sets/WA_Fn-UseC_-Telco-Customer-Churn.csv) where I have staged it for direct download to the AML workspace using SDK.
+
+Once the dataset was downloaded, SDK was again used to clean and split the data into training and validation datasets, which were then stored as Pandas dataframes in memory to facilitate quick data exploration and query, and registered as AML TabularDatasets in the workspace to enable remote access by the AutoML experiment running on a remote compute cluster.
+
+The dataset after downloaded and registered into the workspace looks like this:
+
+
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
