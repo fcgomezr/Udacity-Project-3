@@ -63,7 +63,7 @@ Once the dataset was downloaded, SDK was again used to clean and split the data 
 
 The dataset after downloaded and registered into the workspace looks like this:
 
-
+![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/Datasets.png)
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
