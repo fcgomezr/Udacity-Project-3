@@ -11,7 +11,7 @@ I built two models, one using AutoML and one, custom model. The AutoML is equipp
 
 
 The diagram below provides an overview of the workflow:
-![workflow](https://www.element61.be/sites/default/files/assets/insights/mlservices/Workflow.jpg
+![workflow](https://www.element61.be/sites/default/files/assets/insights/mlservices/Workflow.jpg)
 
 
 
