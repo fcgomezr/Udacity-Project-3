@@ -137,7 +137,20 @@ The best performing model is the `VotingEnsemble` with an AUC_weighted value of 
 * Explore other AutoML configurations.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+
+<p> The machine learning model I have chosen to go along with hyperdrive is [Sckit-learn LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)  model. In `LogisticRegression`, these were the two hyperparameters tuned by `HyperDrive` during the experiment run.
+  
+  
+  Some of the hyperdrive configuration done for this classification task are:
+  <ul>
+    <li> primary_metric_name (accuracy): The name of the primary metric reported by the experiment runs. </li>
+    <li> The parameter sampler I chose is <b>RandomParameterSampling</b> because it supports both discrete and continuous hyperparameters. It supports early termination of low-          performance runs and supports early stopping policies. </li>
+    <li> The early stopping policy I chose was <b>BanditPolicy</b> because it is based on slack factor and evaluation interval. Bandit terminates runs where the primary metric            is not within the specified slack factor compared to the best performing run. </li>
+    <li> max_concurrent_runs (4): The maximum number of runs to execute concurrently. </li>
+    <li> max_total_runs (21): The maximum total number of runs to create. This is the upper bound; there may be fewer runs when the sample space is smaller than this value.         </li>
+  </ul>
+</p>
+
 
 
 ### Results
