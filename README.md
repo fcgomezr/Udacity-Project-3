@@ -153,20 +153,22 @@ The HyperDrive experiment run was configured with [parameter](https://docs.micro
 
   </ul>
 </p>   
-  ```python
+
+
+
+```python
  # Specify parameter sampler
-ps = RandomParameterSampling(
-{
+   ps = RandomParameterSampling(
+    {
     '--C' : choice(0.03,0.3,3,10,30),
     '--max_iter' : choice(25,50,75,100)
-})
-
-  
+   })
   ```
+  
+  
   
 </p>
 </ul>
-
     <li> The early stopping policy I chose was <b>BanditPolicy</b> because it is based on slack factor and evaluation interval. Bandit terminates runs where the primary metric            is not within the specified slack factor compared to the best performing run. </li>
     <li> max_concurrent_runs (4): The maximum number of runs to execute concurrently. </li>
     <li> max_total_runs (21): The maximum total number of runs to create. This is the upper bound; there may be fewer runs when the sample space is smaller than this value.         </li>
