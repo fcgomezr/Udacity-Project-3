@@ -138,9 +138,9 @@ The best performing model is the `VotingEnsemble` with an AUC_weighted value of 
 
 ## Hyperparameter Tuning
 
-<p> The machine learning model I have chosen to go along with hyperdrive is [Sckit-learn LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)  model. In `LogisticRegression`, these were the two hyperparameters tuned by `HyperDrive` during the experiment run.
+ The machine learning model I have chosen to go along with hyperdrive is [Sckit-learn LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)  model. In `LogisticRegression`, these were the two hyperparameters tuned by `HyperDrive` during the experiment run.
   
-  
+</p>  
   Some of the hyperdrive configuration done for this classification task are:
   <ul>
     <li> primary_metric_name (accuracy): The name of the primary metric reported by the experiment runs. </li>
