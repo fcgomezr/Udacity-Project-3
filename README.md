@@ -201,14 +201,17 @@ hyperdrive_config = HyperDriveConfig (
 The python training script `train.py` was executed during the experiment run. It downloaded the dataset from this [Github Repo](https://github.com/fcgomezr/Udacity-Project-3/blob/main/data%20sets/WA_Fn-UseC_-Telco-Customer-Churn.csv) , split it into train and test sets, accepted two input parameters `C` and `max_iter` (representing Regularization Strength and Max iterations respectively) for use with [Sckit-learn LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html).
 
 
-## Benefits of the parameter sampler chosen
+### Benefits of the parameter sampler chosen
 The [random parameter](https://docs.microsoft.com/en-us/python/api/azureml-train-core/azureml.train.hyperdrive.randomparametersampling?view=azure-ml-py) sampler for HyperDrive supports discrete and continuous hyperparameters, as well as early termination of low-performance runs. It is simple to use, eliminates bias and increases the accuracy of the model.
 
-## Benefits of the early stopping policy chosen
+### Benefits of the early stopping policy chosen
 The early termination policy [BanditPolicy](https://docs.microsoft.com/en-us/python/api/azureml-train-core/azureml.train.hyperdrive.banditpolicy?view=azure-ml-py&preserve-view=true#&preserve-view=truedefinition) for HyperDrive automatically terminates poorly performing runs and improves computational efficiency. It is based on slack factor/slack amount and evaluation interval and cancels runs where the primary metric is not within the specified slack factor/slack amount compared to the best performing run.
 
 The experiment ran on a remote compute cluster with the progress tracked real time using the `RunDetails` widget as shown below:
 
+
+![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/HIPER-%20Rundtails.png)
+![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/HIPER-%20Rundtails2.png)
 
 
 
