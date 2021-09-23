@@ -170,12 +170,35 @@ The HyperDrive experiment run was configured with [parameter](https://docs.micro
 </p>
 </ul>
     <li> The early stopping policy I chose was <b>BanditPolicy</b> because it is based on slack factor and evaluation interval. Bandit terminates runs where the primary metric            is not within the specified slack factor compared to the best performing run. </li>
+</p>
+</ul> 
+    
+```python
+# Specify a Policy
+policy = BanditPolicy(evaluation_interval = 3, slack_factor = 0.1)
+```   
+</p>
+</ul>
     <li> max_concurrent_runs (4): The maximum number of runs to execute concurrently. </li>
-    <li> max_total_runs (21): The maximum total number of runs to create. This is the upper bound; there may be fewer runs when the sample space is smaller than this value.         </li>
+    <li> max_total_runs (40): The maximum total number of runs to create. This is the upper bound; there may be fewer runs when the sample space is smaller than this value.         </li> Finally, <b>HyperDriveConfig<\b> using the estimator
   </ul>
 </p>
 
+```python
+# Create a HyperDriveConfig using the estimator, hyperparameter sampler, and policy.
+hyperdrive_config = HyperDriveConfig (
+    hyperparameter_sampling=ps,
+    primary_metric_name='Accuracy',
+    primary_metric_goal=PrimaryMetricGoal.MAXIMIZE,
+    max_total_runs=40,
+    max_concurrent_runs=5,
+    policy=policy,
+    estimator=est
+)
+```   
 
+
+The python training script `train.py` was executed during the experiment run. It downloaded the dataset from this [Github Repo](https://github.com/fcgomezr/Udacity-Project-3/blob/main/data%20sets/WA_Fn-UseC_-Telco-Customer-Churn.csv) , split it into train and test sets, accepted two input parameters `C` and `max_iter` (representing Regularization Strength and Max iterations respectively) for use with [Sckit-learn LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html).
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
