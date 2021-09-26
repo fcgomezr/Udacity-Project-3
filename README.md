@@ -334,6 +334,25 @@ print("Predicted Value : ",resp.text)
 
 The resulst are this 
 ![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/model%20deploy%203.png)
+
+
+Application Insights collects useful data from the web service endpoint, such as
+
+* Output data
+
+* Responses
+
+* Request rates, response times, and failure rates
+
+* Dependency rates, response times, and failure rates
+
+* Exceptions
+
+The data is useful for monitoring the endpoint. It also automatically detect performance anomalies, and includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability.
+
+For example, the dashboard showed the 40 scoring requests I sent to the endpoint :
+
+![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/model%20deploy%206.png)
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
