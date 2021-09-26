@@ -333,7 +333,7 @@ print("Predicted Value : ",resp.text)
 
 
 The resulst are this 
-![]([https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/model%20deploy%203.png])
+![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/model%20deploy%203.png)
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
