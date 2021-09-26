@@ -271,6 +271,63 @@ print(service.scoring_uri)
 print(service.swagger_uri)
 ```
 
+>* Test the scoring endpoint 
+
+```python
+data = {"data":
+        [{
+                "gender_Male" :0,
+                "SeniorCitizen":1,
+                "Dependents" :0,
+                "Partner" :0,
+                "tenure":2,
+                "PhoneService" :1,
+                "MultipleLines" :1,
+                "InternetService_Fiber optic" :1,
+                "InternetService_No":0,
+                "OnlineSecurity" :0,
+                "OnlineBackup" :1,
+                "DeviceProtection" :0,
+                "TechSupport" :0,
+                "StreamingTV" :0,
+                "StreamingMovies" :1,
+                "Contract_One year" : 0,
+                "Contract_Two year":0,
+                "PaperlessBilling" :1,
+                "PaymentMethod_Bank transfer (automatic)":0,
+                "PaymentMethod_Credit card (automatic)":0,
+                "PaymentMethod_Mailed check":0,
+                "PaymentMethod_Electronic check" :1,
+                "MonthlyCharges" : 55.7,
+                "TotalCharges" : 239.8 }
+        ]
+        }
+```
+
+>* Make the request and display the response
+
+```python
+resp = requests.post(scoring_uri, input_data, headers=headers)
+
+print("Response Code : ", resp.status_code)
+print("Predicted Value : ",resp.text)
+```
+>* Make the function define in `score.py`
+>```python
+>def run(data):
+    try:
+        temp = json.loads(data)
+        data = pd.DataFrame(temp['data'])
+        result = deploy_model.predict(data)
+        # You can return any data type, as long as it is JSON serializable.
+        return result.tolist()
+    except Exception as e:
+        error = str(e)
+        return error
+>```
+
+
+The resulst are this 
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
