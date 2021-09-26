@@ -243,7 +243,33 @@ model = Model.register(workspace = ws, model_name = 'best_fit_automl_model', mod
 print(model.name, model.id, model.version, sep='\t')
 ```
 
+>* Send a request to the web service you deployed to test it. 
 
+```python
+from azureml.core.environment import Environment
+from azureml.core.model import InferenceConfig
+from azureml.core.webservice import LocalWebservice, Webservice, AciWebservice
+from azureml.core.conda_dependencies import CondaDependencies
+import azureml.train.automl
+
+# Create the environment
+env = best_automl.get_environment()
+conda_dep = CondaDependencies()
+
+
+# Adds dependencies to PythonSection of myenv
+#env.python.conda_dependencies=conda_dep
+
+inference_config = InferenceConfig(entry_script='score.py', environment=env)
+
+deployment_config = AciWebservice.deploy_configuration(cpu_cores=1, memory_gb=4, enable_app_insights=True)
+service = Model.deploy(ws, "customerservice", [model], inference_config, deployment_config)
+service.wait_for_deployment(show_output = True)
+
+print(service.state)
+print(service.scoring_uri)
+print(service.swagger_uri)
+```
 
 
 ## Screen Recording
