@@ -271,6 +271,11 @@ print(service.scoring_uri)
 print(service.swagger_uri)
 ```
 
+>* After executing the above block of code cells, the model was deployed as a web service and appeared on the Endpoints dashboard like the screenshots shown below:
+>![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/model%20deploy%204.png)
+>![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/model%20deploy%205.1.png)
+>![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/model%20deploy%205.2.png)
+
 >* Test the scoring endpoint 
 
 ```python
