@@ -315,15 +315,15 @@ print("Predicted Value : ",resp.text)
 >* Make the function define in `score.py`
 >```python
 >def run(data):
-    try:
-        temp = json.loads(data)
-        data = pd.DataFrame(temp['data'])
-        result = deploy_model.predict(data)
-        # You can return any data type, as long as it is JSON serializable.
-        return result.tolist()
-    except Exception as e:
-        error = str(e)
-        return error
+>    try:
+>        temp = json.loads(data)
+>        data = pd.DataFrame(temp['data'])
+>        result = deploy_model.predict(data)
+>        # You can return any data type, as long as it is JSON serializable.
+>        return result.tolist()
+>    except Exception as e:
+>        error = str(e)
+>        return error
 >```
 
 
