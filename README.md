@@ -345,11 +345,7 @@ The data is useful for monitoring the endpoint. It also automatically detect per
 For example, the dashboard showed the 40 scoring requests I sent to the endpoint :
 
 ![](https://github.com/fcgomezr/Udacity-Project-3/blob/main/Screen%20Shops/model%20deploy%206.png)
-## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+
 
 ## Future Project Improvements
 
@@ -364,3 +360,11 @@ For example, the dashboard showed the 40 scoring requests I sent to the endpoint
 - Choose a different clssification metric to optimize for
 - Choose a different termination policy like `No Termination`, `Median stopping`, etc.
 - Specify a different sampling method like `Bayesian`, `Grid`, etc.
+
+
+## Screen Recording
+*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+- A working model
+- Demo of the deployed  model
+- Demo of a sample request sent to the endpoint and its response
+
