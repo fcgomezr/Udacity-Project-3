@@ -13,7 +13,7 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # TODO: Create TabularDataset using TabularDatasetFactory
 # Data is located at:
  
-dir_web = "https://raw.githubusercontent.com/murphy999/Udacity-Azure-ML-Scholarship/master/nd00333-capstone/starter_file/Telco-Customer-Churn.csv"
+dir_web = "https://raw.githubusercontent.com/fcgomezr/Udacity-Project-3/main/data%20sets/WA_Fn-UseC_-Telco-Customer-Churn.csv"
 ds = TabularDatasetFactory.from_delimited_files(path=dir_web)
 
 
