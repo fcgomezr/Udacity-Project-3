@@ -363,8 +363,18 @@ For example, the dashboard showed the 40 scoring requests I sent to the endpoint
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+
+
+A screencast showing:
+> * a working model
+>
+> * a demo of the deployed  model
+>
+> * a demo of a sample request sent to the endpoint and its response
+>
+is available here:
+
+<a href="https://youtu.be/hzG6wAQsKDM
+" target="_blank"><img src="http://img.youtube.com/vi/YlWKbA4l9bA/0.jpg"
+alt="Capstone Project Screencast" width="240" height="180" border="10" /></a>
 
