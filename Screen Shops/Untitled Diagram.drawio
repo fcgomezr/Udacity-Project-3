@@ -1,1 +1,70 @@
-<mxfile host="app.diagrams.net" modified="2021-10-06T13:48:24.785Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" version="15.3.5" etag="7A0_CxGE0elgSrrf2FFq" type="github"><diagram id="l3ixjxKlIyK09c2V6YOD">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-06T14:06:52.310Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="g7SRAlbwq0GLeeIqEJR9" version="15.3.5" type="github">
+  <diagram id="l3ixjxKlIyK09c2V6YOD" name="Page-1">
+    <mxGraphModel dx="2031" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-1" value="Fases de la Implementación QSUT" style="swimlane;childLayout=stackLayout;horizontal=1;fillColor=none;horizontalStack=1;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;strokeColor=none;stackBorder=10;stackSpacing=-12;resizable=1;align=center;points=[];fontColor=#000000;hachureGap=4;pointerEvents=0;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="570" y="140" width="2660" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-2" value="Desarrollo" style="shape=step;perimeter=stepPerimeter;fixedSize=1;points=[];fontSize=18;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-1">
+          <mxGeometry x="10" y="33" width="860" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-3" value="Validación" style="shape=step;perimeter=stepPerimeter;fixedSize=1;points=[];fontSize=18;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-1">
+          <mxGeometry x="858" y="33" width="1084" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-4" value="Resultados" style="shape=step;perimeter=stepPerimeter;fixedSize=1;points=[];fontSize=18;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-1">
+          <mxGeometry x="1930" y="33" width="720" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-6" value="Modelo" style="swimlane;hachureGap=4;pointerEvents=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="710" y="620" width="440" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-7" value="Iteración de la&lt;br&gt;la información" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/analytics/Analysis_Services.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-6">
+          <mxGeometry x="30" y="50" width="118.13" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-8" value="Procesamiento &lt;br&gt;computacional" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Service_Plans.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-6">
+          <mxGeometry x="180" y="50" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-9" value="Usabilidad por capaz" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/VM_Scale_Sets.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-6">
+          <mxGeometry x="300" y="50" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-11" value="Información Requerida&#xa; Anuales" style="swimlane;horizontal=0;hachureGap=4;pointerEvents=0;fontSize=18;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="610" y="250" width="200" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-15" value="Información de&amp;nbsp;&lt;br&gt;los COUs por año" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/identity/App_Registrations.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-11">
+          <mxGeometry x="90" y="120" width="63" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-16" value="Cuadros &lt;br&gt;Oferta y Utilización" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SSIS_Lift_And_Shift_IR.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-11">
+          <mxGeometry x="91" y="10" width="62" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-12" value="Información Requerida&#xa; Trimestrales" style="swimlane;horizontal=0;hachureGap=4;pointerEvents=0;fontSize=18;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="250" width="340" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-17" value="Información de los&lt;br&gt;&amp;nbsp;índices por Rama de actividad" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/All_Resources.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-12">
+          <mxGeometry x="170" y="110" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-18" value="Información índices&lt;br&gt;&amp;nbsp;por producto" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Backlog.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-12">
+          <mxGeometry x="90" y="10" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-21" value="Índices por vectores" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Module.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="pAFh5G8NbjzX1nqVAd2R-12">
+          <mxGeometry x="220" y="10" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-13" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;elbow=vertical;startArrow=block;startFill=1;strokeColor=#545B64;rounded=0;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;fontSize=18;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="pAFh5G8NbjzX1nqVAd2R-6">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1190" y="560" as="sourcePoint" />
+            <mxPoint x="720" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-14" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;elbow=vertical;startArrow=block;startFill=1;strokeColor=#545B64;rounded=0;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;fontSize=18;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="pAFh5G8NbjzX1nqVAd2R-6">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1030" y="520" as="sourcePoint" />
+            <mxPoint x="1130" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pAFh5G8NbjzX1nqVAd2R-20" value="COUs &lt;br&gt;Trimestrales" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/management_governance/Managed_Applications_Center.svg;hachureGap=4;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="874" y="1010" width="125.93" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
